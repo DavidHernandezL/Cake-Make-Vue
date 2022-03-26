@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div >
+        <div class="img">
           <img class="card-img" :src="src" alt="Pastel">
         </div>
         <div class="card-body">
@@ -26,10 +26,13 @@ export default {
 <style scoped>
   .card {
     width: 200px;
-    border-radius: 10px;
-    border: 1px solid #ddeedd;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-    background-color: rgba(106, 185, 216, 0.9);
+    height: 280px;
+    border: 3px solid white;
+    background-color: rgba(97, 94, 94, 0.801);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    border-radius: 5px;
+    color: #fff
   }
 
   .card:hover {
@@ -38,11 +41,13 @@ export default {
   }
   .card-img {
     width: 200px;
-    height: 200px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    image-rendering: center;
+    height: 150px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
   }
 
-
+  .img {
+    overflow-y: hidden;
+  }
 </style>

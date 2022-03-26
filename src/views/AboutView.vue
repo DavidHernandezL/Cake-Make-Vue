@@ -13,7 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px;
+    padding: 0 30px;
+    height: 100vh;
   }
 
   .info {

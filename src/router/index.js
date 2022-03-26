@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutUs from '../views/AboutView.vue'
 import Dashboard from '../views/dashboardView.vue'
+import Cakes from '../views/CakesView.vue'
+import MakeCakeView from '@/views/makeCakeView.vue'
 
 const routes = [
   {
@@ -15,9 +17,19 @@ const routes = [
     component: AboutUs
   },
   {
+    path: '/cakes',
+    name: 'cakes',
+    component: Cakes
+  },
+  {
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard
+  },
+  {
+    path: '/create',
+    name: 'create',
+    component: MakeCakeView
   }
 ]
 

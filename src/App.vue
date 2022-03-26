@@ -11,7 +11,19 @@
     </div>
   </nav>
   <router-view/>
+  <Footer/>
 </template>
+
+<script>
+  import Footer from './components/Footer.vue';
+
+  export default {
+  name: 'App',
+  components: {
+    Footer,
+  }
+}
+</script>
 
 <style>
 #app {
@@ -25,7 +37,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url(./assets/3.jpg);
+  background-image: url(./assets/Fondo.jpg);
   background-size: cover;
 }
 
@@ -57,5 +69,7 @@ nav a.router-link-exact-active {
   grid-template-columns: repeat(7, 1fr);
   gap: 20px;
 }
+
+
 </style>
 
